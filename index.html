@@ -3,50 +3,176 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RAIZ - Tereré dos Brutos</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>RAIZ — Tereré dos Brutos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f5e9;
+      color: #1e1e1e;
+    }
+
+    header {
+      background-color: #23401c;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    .botao-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .botao-container a {
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 300px;
+      padding: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      margin: 16px 0 8px;
+    }
+
+    .footer {
+      background-color: #23401c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 20px;
+      }
+
+      .botao-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .botao-container a {
+        width: 90%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <img src="Logo Raiz.png" alt="Logo RAIZ" class="logo" />
+    <img src="img/Logo Raiz.png" alt="Logo RAIZ" style="height: 60px;">
     <h1>Respira fundo, puxa o tereré e bora pra lida.</h1>
+    <div class="botao-container">
+      <a href="#sobre-raiz">Saiba mais sobre a RAIZ</a>
+      <a href="#sobre-project">Saiba mais sobre a Project Truck</a>
+      <a href="https://wa.me/5563999926554" target="_blank">Falar no WhatsApp</a>
+    </div>
   </header>
 
-  <section class="intro-buttons">
-    <a href="#sobre-raiz" class="btn">Saiba mais sobre a RAIZ</a>
-    <a href="#sobre-project" class="btn">Saiba mais sobre a Project Truck</a>
-  </section>
-
-  <section id="sobre-raiz" class="section">
+  <section class="section" id="sobre-raiz">
     <h2>A Escolha do Nome: RAIZ</h2>
-    <p>
-      RAIZ representa mais do que a erva-mate. É um estilo de vida. Remete à tradição, à força bruta do campo, à cultura que não se perde com o tempo. É o orgulho de quem vive a lida, de quem pega estrada de botina e cuia na mão.
-    </p>
+    <p>RAIZ representa mais do que a erva-mate. É um estilo de vida. Remete à tradição, à força bruta do campo, à cultura que não se perde com o tempo. É o orgulho de quem vive a lida, de quem pega estrada de botina e cuia na mão.</p>
   </section>
 
-  <section class="produtos">
-    <div class="produto">
-      <img src="Erva Tradicional dos Brutos.png" alt="Tradicional dos Brutos" />
-      <h3>Tradicional dos Brutos - 500g</h3>
-      <p>Erva-mate pura folha, moagem grossa, sabor original, 100% natural, 0% frescura!</p>
-    </div>
-    <div class="produto">
-      <img src="Erva Menta Ice do Cerrado.png" alt="Menta Ice do Cerrado" />
-      <h3>Menta Ice do Cerrado - 500g</h3>
-      <p>Blend refrescante com folhas de menta selecionadas. Leve, marcante e revigorante.</p>
+  <section class="section">
+    <div class="produtos">
+      <div class="card">
+        <img src="img/Erva Tradicional dos Brutos.png" alt="Tradicional dos Brutos">
+        <h3>Tradicional dos Brutos - 500g</h3>
+        <p>Erva-mate pura folha, moagem grossa, sabor original, 100% natural, 0% frescura!</p>
+      </div>
+      <div class="card">
+        <img src="img/Erva Menta Ice do Cerrado.png" alt="Menta Ice do Cerrado">
+        <h3>Menta Ice do Cerrado - 500g</h3>
+        <p>Blend refrescante com folhas de menta selecionadas. Leve, marcante e revigorante.</p>
+      </div>
     </div>
   </section>
 
-  <section id="sobre-project" class="section">
+  <section class="section" id="doses-raiz">
+    <h2>Dose Individual: Abriu, Puxou!</h2>
+    <p style="font-size: 18px; margin-bottom: 30px;"><strong>Ideal pra quem tá na correria, mas não abre mão do ritual bruto.</strong></p>
+
+    <div class="produtos">
+      <div class="card">
+        <img src="img/Dose Bruta.png" alt="Dose Bruta Tradicional">
+        <h3>Dose Bruta Tradicional</h3>
+        <p>Embalagem com 40g e bomba acoplada. Perfeita pra puxar em qualquer lugar, do asfalto à lavoura. 100% estilo raiz.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/Dose Ice.png" alt="Dose Ice do Cerrado">
+        <h3>Dose Ice do Cerrado</h3>
+        <p>O sabor marcante da menta em um tereré pronto pra usar. Refrescância imediata na pegada bruta do cerrado.</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px;">
+      <img src="img/Dose Colheitadeira.png" alt="Dose sendo usada na roça" style="width: 100%; max-width: 800px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    </div>
+  </section>
+
+  <section class="section" id="sobre-project">
     <h2>Sobre a Project Truck</h2>
-    <p>
-      A Project Truck nasceu da paixão por caminhonetes, estilo off-road e simplicidade do campo. Com mais de 100 mil seguidores no Instagram, é um símbolo de autenticidade e conexão com a vida na roça.
-    </p>
+    <p>A Project Truck nasceu da paixão por caminhonetes, estilo off-road e simplicidade do campo. Com mais de 100 mil seguidores no Instagram, é um símbolo de autenticidade e conexão com a vida na roça.</p>
   </section>
 
-  <footer>
-    <p>Siga no Instagram: <a href="https://instagram.com/raiztererebr">@raiztererebr</a> | <a href="https://instagram.com/projecttruckbr">@projecttruckbr</a></p>
-    <p>By: <img src="Logo Project Truck.png" alt="Project Truck" class="logo-footer"/></p>
-  </footer>
+  <div class="footer">
+    <p>Siga no Instagram:
+      <a href="https://instagram.com/raiztererebr" target="_blank">@raiztererebr</a> |
+      <a href="https://instagram.com/projecttruckbr" target="_blank">@projecttruckbr</a>
+    </p>
+    <img src="img/Logo Project Truck.png" alt="Logo Project Truck" style="height: 30px; margin-top: 10px;">
+  </div>
+
 </body>
 </html>

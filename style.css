@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f3f1e7;
+  color: #1d1d1d;
+}
+header {
+  background: #264221;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.logo {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 1.5rem;
+}
+.section {
+  padding: 2rem;
+}
+.intro-buttons {
+  text-align: center;
+  margin: 2rem 0;
+}
+.btn {
+  background: #3b7d2a;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+.produtos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.produto {
+  width: 300px;
+  margin: 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+}
+.produto img {
+  width: 100%;
+  height: auto;
+}
+footer {
+  background: #264221;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.logo-footer {
+  height: 40px;
+  vertical-align: middle;
+}
